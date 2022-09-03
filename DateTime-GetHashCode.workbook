@@ -1,0 +1,31 @@
+---
+uti: com.xamarin.workbook
+id: 74f84b31-37b1-4813-8cd2-8a5b640fc4f0
+title: DateTime-GetHashCode
+platforms:
+- DotNetCore
+---
+
+```csharp
+using System;
+```
+
+```csharp
+DateTime d = new DateTime(9999, 12, 31);
+```
+
+```csharp
+int res = d.GetHashCode();
+```
+
+```csharp
+DateTime d2 = new DateTime(9999, 12, 31);
+```
+
+```csharp
+int res2 = d2.GetHashCode();
+```
+
+```csharp
+res == res2;
+```
